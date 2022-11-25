@@ -50,16 +50,21 @@ header {
     padding-top: 10px;
 }
 
+nav {
 
+    display: flex;
+    justify-content: space-around;
+    background-color: #f9b509;
+
+}
 
 nav a{
 
     text-align: center;
-    background-color: #f9b509;
+    
     text-decoration: none;
     padding: 35px;
-    display: flex;
-    justify-content: space-around;
+    
 }
 
 
@@ -239,7 +244,7 @@ section {
 
 .msg {
 
-    background-color: #f86c08;
+    background-color: #1f513b;
     color: #f0f1df;
     line-height: 1.5em;
     padding: 35px;
