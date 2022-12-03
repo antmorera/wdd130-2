@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ant's Working Computers | Home</title>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <a id="logo_link" href="index.html">
+          <img class="logo" src="images/main-logo.jpg" alt="Ant's Logo" />
+        </a>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="contactus.html">Contact Us</a>
+          <a href="faq.html">FAQ</a>
+          <a href="site-plan-rafting.html">Site Plan</a>
+        </nav>
+      </header>
+      <div id="hero">
+        <div id="hero-box">
+          <img
+            id="hero-img"
+            src="images/banner-image.jpg"
+            alt="Technology banner" />
+        </div>
+      </div>
+      <main class="questions-answers">
+        <section class="list-of-questions">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">
+              1. I can't go to your shop, can someone come to where I am at and
+              help me?
+            </button>
+
+            <button onclick="myFunction()" class="dropbtn">
+              2. Do you do finance for the products that you sell?
+            </button>
+
+            <button onclick="myFunction()" class="dropbtn">
+              3. What happens if what I bought is not working?
+            </button>
+
+            <button onclick="myFunction()" class="dropbtn">
+              4. Do you sell office computers? or only for videogames?
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#"
+                >1. We have profesionals ready to help you with any technical
+                problem with your computer.</a
+              >
+              <a href="#"
+                >2. We do! But only with full equipement, individual parts are
+                limited to their individual price and we have no finance for
+                that.</a
+              >
+              <a href="#"
+                >3. If you purchased one of our computers with its guarantee we
+                can give you a new one, in case you did not buy our guarantee we
+                can inspect what happend and see if you are eligible for a
+                refund.
+              </a>
+              <a href="#"
+                >4. We got you cover for anything you need, we have multiple
+                bundles for office computers that can help you out to start your
+                business right away!</a
+              >
+            </div>
+          </div>
+          <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown menu if the user clicks outside of it
+            window.onclick = function (event) {
+              if (!event.target.matches(".dropbtn")) {
+                var dropdowns =
+                  document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains("show")) {
+                    openDropdown.classList.remove("show");
+                  }
+                }
+              }
+            };
+          </script>
+        </section>
+        <footer>
+          <p>Ant's Working Computers &copy; 2022 - Anthuan Morera</p>
+          <p><a href="site-plan-rafting.html">Site Plan</a></p>
+          <p><a href="contactus.html">Contact Us</a></p>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank">
+              <img src="images/facebook.png " alt="fb icon" />
+            </a>
+            <a href="https://twitter.com" target="_blank">
+              <img src="images/twitter.png" alt="twitter icon" />
+            </a>
+            <a href="https://instagram.com" target="_blank">
+              <img src="images/instagram.png" alt="instagram icon" />
+            </a>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
